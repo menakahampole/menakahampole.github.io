@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menaka Hampole</title>
+  <meta name="description" content="Menaka Hampole — Assistant Professor of Finance, Yale School of Management">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Mobile header ── -->
+  <div class="mobile-header">
+    <h1>Menaka Hampole</h1>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h1>Menaka Hampole</h1>
+      <p class="position">Assistant Professor of Finance<br>Yale School of Management</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home"     class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#research" class="nav-link"        data-section="research">Research</a></li>
+        <li><a href="#teaching" class="nav-link"        data-section="teaching">Teaching</a></li>
+        <li><a href="#contact"  class="nav-link"        data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="mailto:menaka.hampole@yale.edu">menaka.hampole@yale.edu</a><br>
+      Edward P. Evans Hall<br>
+      165 Whitney Avenue<br>
+      New Haven, CT 06511
+    </div>
+  </aside>
+
+  <!-- ── Main content ── -->
+  <main class="main-content">
+
+    <!-- ════════════════════════ HOME ════════════════════════ -->
+    <section class="section active" id="section-home">
+      <div class="home-header">
+
+        <!--
+          PHOTO: replace images/photo.jpg with your headshot.
+          Recommended size: ~400×500px.
+        -->
+        <img src="images/photo.jpg"
+             alt="Menaka Hampole"
+             class="profile-photo"
+             onerror="this.style.display='none';document.getElementById('photo-placeholder').style.display='flex';">
+        <div class="profile-photo-placeholder" id="photo-placeholder" style="display:none">
+          Add headshot to<br><code>images/photo.jpg</code>
+        </div>
+
+        <div class="profile-text">
+          <h2>Menaka Hampole</h2>
+          <p class="role">Assistant Professor of Finance &middot; Yale School of Management</p>
+
+          <p>
+            Welcome! I am an Assistant Professor of Finance at the Yale School of Management.
+            My research lies at the intersection of household finance and labor economics,
+            with a focus on education financing, gender gaps in labor and financial markets,
+            and the economic consequences of technological change.
+          </p>
+          <p>
+            I received my PhD in Finance from the Kellogg School of Management,
+            Northwestern University (2023).
+          </p>
+
+          <div class="affiliations">
+            <span class="affil-badge">NBER</span>
+            <span class="affil-badge">CEPR</span>
+          </div>
+
+          <div class="profile-links">
+            <!-- Update cv.pdf with the path to your CV file -->
+            <a href="cv.pdf" class="btn btn-accent" target="_blank">CV</a>
+            <a href="mailto:menaka.hampole@yale.edu" class="btn">Email</a>
+            <a href="https://twitter.com/menaka_hampole" class="btn" target="_blank">Twitter / X</a>
+            <a href="https://som.yale.edu/faculty-research/faculty-directory/menaka-v-hampole" class="btn" target="_blank">Yale SOM</a>
+            <a href="https://www.nber.org/people/menaka_hampole" class="btn" target="_blank">NBER</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════ RESEARCH ════════════════════════ -->
+    <section class="section" id="section-research">
+
+      <h2 class="section-title">Working Papers</h2>
+      <ol class="paper-list">
+
+        <li class="paper-item">
+          <span class="paper-num">1.</span>
+          <div class="paper-body">
+            <div class="paper-title">
+              Peer Effects and the Gender Gap in Corporate Leadership: Evidence from MBA Students
+            </div>
+            <div class="paper-authors">
+              with Francesca Truffa and Ashley Wong
+            </div>
+            <div class="paper-journal">
+              Conditionally accepted, <em>Quarterly Journal of Economics</em>
+            </div>
+            <div class="paper-awards">
+              <span class="paper-award">WFA Best Empirical Finance Paper 2025</span>
+              <span class="paper-award">Wharton-WRDS Best Empirical Finance Paper 2025</span>
+              <span class="paper-award">Carlo Dell'Aringa Young Economist Prize 2023</span>
+              <span class="paper-award">Outstanding Paper — Discrimination &amp; Diversity Workshop 2022</span>
+            </div>
+            <div class="paper-links">
+              <!-- Update href values when links are available -->
+              <a href="#" target="_blank">PDF</a>
+              <a href="#" target="_blank">SSRN</a>
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+            </div>
+            <div class="abstract-text">
+              Using administrative data from top U.S. business schools linked to publicly available
+              LinkedIn profiles, we study how the gender composition of MBA cohorts shapes career
+              outcomes. We find that women are more likely to enter senior management positions
+              when they attend business school alongside a larger share of female peers.
+              <!-- Replace with full abstract -->
+            </div>
+          </div>
+        </li>
+
+        <li class="paper-item">
+          <span class="paper-num">2.</span>
+          <div class="paper-body">
+            <div class="paper-title">
+              Artificial Intelligence and the Labor Market
+            </div>
+            <div class="paper-authors">
+              with Dimitris Papanikolaou, Lawrence Schmidt, and Bryan Seegmiller
+            </div>
+            <div class="paper-journal">
+              NBER Working Paper No. 33509 (2025)
+            </div>
+            <div class="paper-links">
+              <a href="https://www.nber.org/papers/w33509" target="_blank">NBER</a>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5121025" target="_blank">SSRN</a>
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+            </div>
+            <div class="abstract-text">
+              We use natural language processing to develop novel measures of workers' task-level
+              exposure to AI and machine learning technologies from 2010 to 2023.
+              <!-- Replace with full abstract -->
+            </div>
+          </div>
+        </li>
+
+        <li class="paper-item">
+          <span class="paper-num">3.</span>
+          <div class="paper-body">
+            <div class="paper-title">
+              Does Distance Still Matter? Evidence from 30 Years of Mortgage Lending
+            </div>
+            <div class="paper-authors">
+              with Adam Jørring and Joao Monteiro
+            </div>
+            <div class="paper-journal">
+              2025
+            </div>
+            <div class="paper-links">
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5124352" target="_blank">SSRN</a>
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+            </div>
+            <div class="abstract-text">
+              We document that geographic distance from bank branches remains associated with
+              lower credit quality and higher pricing in mortgage markets. These patterns have
+              persisted over 30 years despite the growth of securitization and online banking.
+              <!-- Replace with full abstract -->
+            </div>
+          </div>
+        </li>
+
+        <li class="paper-item">
+          <span class="paper-num">4.</span>
+          <div class="paper-body">
+            <div class="paper-title">
+              Universal No-Loan Policies
+            </div>
+            <div class="paper-authors">
+              Menaka Hampole
+            </div>
+            <div class="paper-links">
+              <a href="#" target="_blank">PDF</a>
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+            </div>
+            <div class="abstract-text">
+              I study 22 U.S. universities that replaced student loans with grants through
+              universal no-loan policies (UNLPs) between 2001 and 2021. I find that UNLPs
+              increased the share of students choosing high-paying majors by 6%.
+              <!-- Replace with full abstract -->
+            </div>
+          </div>
+        </li>
+
+        <li class="paper-item">
+          <span class="paper-num">5.</span>
+          <div class="paper-body">
+            <div class="paper-title">
+              What Explains the Twin Gender Gaps in Higher Education? The Role of Outside Options
+            </div>
+            <div class="paper-authors">
+              with Titan Alon and Laura Murphy
+            </div>
+            <div class="paper-journal">
+              Upjohn Institute Early Career Research Award 2025
+            </div>
+            <div class="paper-links">
+              <a href="#" target="_blank">PDF</a>
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+            </div>
+            <div class="abstract-text">
+              <!-- Add abstract here -->
+            </div>
+          </div>
+        </li>
+
+        <li class="paper-item">
+          <span class="paper-num">6.</span>
+          <div class="paper-body">
+            <div class="paper-title">
+              Intra-Household Decisions and Labor Market Outcomes: Evidence from Shared Parental Leave
+            </div>
+            <div class="paper-authors">
+              with Andrea Ferrara and Joao Monteiro
+            </div>
+            <div class="paper-links">
+              <a href="#" target="_blank">PDF</a>
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+            </div>
+            <div class="abstract-text">
+              <!-- Add abstract here -->
+            </div>
+          </div>
+        </li>
+
+        <li class="paper-item">
+          <span class="paper-num">7.</span>
+          <div class="paper-body">
+            <div class="paper-title">
+              The Effects of the Student Loan Moratorium on Household Finance
+            </div>
+            <div class="paper-authors">
+              with Lucy Msall
+            </div>
+            <div class="paper-links">
+              <a href="#" target="_blank">PDF</a>
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+            </div>
+            <div class="abstract-text">
+              <!-- Add abstract here -->
+            </div>
+          </div>
+        </li>
+
+      </ol>
+
+      <!--
+        PUBLICATIONS SECTION: uncomment and fill in when you have published papers.
+
+      <h2 class="section-title">Publications</h2>
+      <ol class="paper-list">
+        <li class="paper-item">
+          <span class="paper-num">1.</span>
+          <div class="paper-body">
+            <div class="paper-title">Paper Title</div>
+            <div class="paper-authors">with Co-Author</div>
+            <div class="paper-journal"><em>Journal Name</em>, Vol(Issue), Year</div>
+            <div class="paper-links">
+              <a href="#" target="_blank">PDF</a>
+              <a href="#" target="_blank">Journal</a>
+              <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+            </div>
+            <div class="abstract-text">Abstract text here.</div>
+          </div>
+        </li>
+      </ol>
+      -->
+
+    </section>
+
+    <!-- ════════════════════════ TEACHING ════════════════════════ -->
+    <section class="section" id="section-teaching">
+
+      <h2 class="section-title">Teaching</h2>
+
+      <div class="course-group">
+        <h3>Yale School of Management</h3>
+        <ul class="course-list">
+          <!-- Update course codes and titles below -->
+          <li>
+            <span class="course-code">MGT XXX</span>
+            <span>Household Finance (PhD)</span>
+          </li>
+          <li>
+            <span class="course-code">MGT XXX</span>
+            <span>Financial Markets (MBA)</span>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- ════════════════════════ CONTACT ════════════════════════ -->
+    <section class="section" id="section-contact">
+
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p><a href="mailto:menaka.hampole@yale.edu">menaka.hampole@yale.edu</a></p>
+          <div class="spacer">
+            <h3>Twitter / X</h3>
+            <p><a href="https://twitter.com/menaka_hampole" target="_blank">@menaka_hampole</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Office</h3>
+          <p>
+            Edward P. Evans Hall<br>
+            165 Whitney Avenue<br>
+            New Haven, CT 06511-3729<br><br>
+            Yale School of Management
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- /.main-content -->
+
+  <script>
+    // ── Section switching ──
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.section');
+
+    function showSection(id) {
+      sections.forEach(s => s.classList.remove('active'));
+      navLinks.forEach(l => l.classList.remove('active'));
+      const sec = document.getElementById('section-' + id);
+      const lnk = document.querySelector('[data-section="' + id + '"]');
+      if (sec) sec.classList.add('active');
+      if (lnk) lnk.classList.add('active');
+      window.scrollTo(0, 0);
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        showSection(link.dataset.section);
+        closeSidebar();
+      });
+    });
+
+    // Hash-based navigation (e.g. menakahampole.github.io/#research)
+    function handleHash() {
+      const hash = location.hash.replace('#', '');
+      if (hash && document.getElementById('section-' + hash)) showSection(hash);
+    }
+    window.addEventListener('hashchange', handleHash);
+    handleHash();
+
+    // ── Mobile sidebar ──
+    const hamburger = document.getElementById('hamburger');
+    const sidebar   = document.getElementById('sidebar');
+    const overlay   = document.getElementById('overlay');
+
+    function closeSidebar() {
+      sidebar.classList.remove('open');
+      overlay.classList.remove('active');
+    }
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', closeSidebar);
+
+    // ── Abstract toggles ──
+    function toggleAbstract(btn) {
+      const abs = btn.closest('.paper-links').nextElementSibling;
+      if (!abs) return;
+      const open = abs.classList.toggle('open');
+      btn.textContent = open ? 'Hide Abstract' : 'Abstract';
+    }
+  </script>
+
+</body>
+</html>
