@@ -121,9 +121,9 @@ nav ul li a.active {
 }
 
 .profile-photo {
-  width: 195px;
-  min-width: 195px;
-  height: 245px;
+  width: 225px;
+  min-width: 225px;
+  height: 280px;
   object-fit: cover;
   object-position: top;
   filter: grayscale(15%);
